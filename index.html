@@ -28,7 +28,14 @@
           <li>Measuring to ensure updates are a success</li>
           <li>And much more!</li>
         </ul>
-        <form>
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input
+            type="hidden"
+            name="access_key"
+            value="83ec02dd-59a7-42ec-bf3d-295b5bc179e2"
+          />
+          <label for="name">Your Name</label>
+          <input type="text" name="name" placeholder="John Smith" required />
           <label for="email">Email Address</label>
           <input type="email" id="email" placeholder="email@company.com" />
           <button type="submit">Subscribe to monthly newsletter</button>
@@ -49,5 +56,6 @@
       <button class="dismiss">Dismiss Message</button>
     </div>
     <script src="./index.js"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
   </body>
 </html>
