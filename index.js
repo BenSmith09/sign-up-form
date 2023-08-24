@@ -22,6 +22,8 @@ form.addEventListener("submit", (e) => {
   const emailInput = document.querySelector("#email");
 
   if (ValidateEmail(emailInput)) {
+    form.submit();
+
     card_1.classList.add("hide"); //these two lines of code adds and removes the hide css styles to display the success message
     card_2.classList.remove("hide");
   }
